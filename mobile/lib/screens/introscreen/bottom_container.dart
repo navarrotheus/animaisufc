@@ -4,7 +4,7 @@ class BottomContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(bottom: 30),
+      padding: const EdgeInsets.only(bottom: 30),
       alignment: Alignment.bottomCenter,
       constraints: BoxConstraints.expand(
         height: double.infinity,
@@ -14,7 +14,7 @@ class BottomContainer extends StatelessWidget {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
         ),
-        padding: EdgeInsets.symmetric(
+        padding: const EdgeInsets.symmetric(
           vertical: 6,
           horizontal: 30,
         ),

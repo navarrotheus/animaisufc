@@ -19,6 +19,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  material_design_icons_flutter: 3.4.4895
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -57,22 +58,32 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Open Sans
+    - family: Mitr
       fonts:
-        - asset: assets/fonts/OpenSans-SemiBold.ttf
-          weight: 600
-        - asset: assets/fonts/OpenSans-Regular.ttf
-          weight: 400
-        - asset: assets/fonts/OpenSans-Light.ttf
+        - asset: assets/fonts/Mitr-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Mitr-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Mitr-Light.ttf
           weight: 300
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
+        - asset: assets/fonts/Mitr-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Mitr-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Mitr-SemiBold.ttf
+          weight: 600
+
     - family: Inconsolata
       fonts:
         - asset: assets/fonts/Inconsolata-Bold.ttf
           weight: 700
         - asset: assets/fonts/Inconsolata-Regular.ttf
           weight: 400
+
+# Ícones
+    - family: NavIcons
+      fonts:
+        - asset: assets/icons/NavIcons.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

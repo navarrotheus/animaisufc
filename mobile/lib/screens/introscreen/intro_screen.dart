@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 import 'background_image.dart';
-import 'bottom_container.dart';
 import 'top_container.dart';
+import 'bottom_container.dart';
 
-class HomePage extends StatelessWidget {
+class IntroScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

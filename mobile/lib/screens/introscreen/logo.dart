@@ -4,7 +4,7 @@ class Logo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(
+      padding: const EdgeInsets.only(
         top: 50,
         bottom: 14,
       ),
@@ -12,7 +12,7 @@ class Logo extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Padding(
-            padding: EdgeInsets.only(right: 14),
+            padding: const EdgeInsets.only(right: 14),
             child: Image.asset(
               'assets/images/logo-no-text.png',
               width: 80,
