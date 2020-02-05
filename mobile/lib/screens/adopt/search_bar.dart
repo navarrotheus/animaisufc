@@ -40,12 +40,7 @@ class _SearchBarState extends State<SearchBar> {
         ),
         Padding(
           padding: const EdgeInsets.only(left: 22),
-          child: const Icon(
-            // Filtro
-            MdiIcons.tune,
-            size: 28,
-            color: const Color.fromARGB(160, 0, 0, 0),
-          ),
+          child: controlsIcon,
         ),
       ],
     );

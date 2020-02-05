@@ -9,8 +9,6 @@ import 'categories.dart';
 import 'search_bar.dart';
 
 class Adopt extends StatefulWidget {
-  Adopt({Key key}) : super(key: key);
-
   @override
   _AdoptState createState() => _AdoptState();
 }

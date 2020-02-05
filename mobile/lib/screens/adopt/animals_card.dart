@@ -3,7 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class AnimalCard extends StatelessWidget {
-  const AnimalCard({Key key}) : super(key: key);
+  final String _name;
+  final String _url;
+  final bool _male;
+
+  AnimalCard(
+    this._name,
+    this._url,
+    this._male,
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +29,7 @@ class AnimalCard extends StatelessWidget {
                   topLeft: Radius.circular(19), topRight: Radius.circular(19)),
               color: Colors.white,
               image: DecorationImage(
-                image: NetworkImage('https://i.ibb.co/hY7HtmQ/rick.jpg'),
+                image: NetworkImage(_url),
                 fit: BoxFit.cover,
               ),
             ),
@@ -50,20 +58,11 @@ class AnimalCard extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(right: 4),
                   child: Text(
-                    'Rick',
-                    style: TextStyle(
-                      fontSize: 17,
-                      fontFamily: FontNameTitle,
-                      fontWeight: FontWeight.w400,
-                    ),
+                    _name,
+                    style: TitleAnimalCardStyle,
                   ),
                 ),
-                SvgPicture.asset(
-                  'assets/icons/male.svg',
-                  width: 13,
-                  height: 12,
-                  color: Color(0xFF85A2FF),
-                ),
+                _male ? maleIcon : femaleIcon
               ],
             ),
           ),

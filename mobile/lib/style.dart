@@ -43,6 +43,12 @@ const TitleAnimaisStyle = TextStyle(
   fontSize: MediumTextSize,
 );
 
+const TitleAnimalCardStyle = TextStyle(
+  fontSize: 17,
+  fontFamily: FontNameTitle,
+  fontWeight: FontWeight.w400,
+);
+
 // Cores
 const AppBackgroundColor = Color(0xFFF9F9F9);
 const ButtonColor = Color(0xFF1EA296);
@@ -50,3 +56,22 @@ const TextColor = Color(0xFF26CABF);
 const CategoriesIconColor = Color(0xFFEBEBEB);
 
 // Ícones
+// Adopt
+final maleIcon = SvgPicture.asset(
+  'assets/icons/male.svg',
+  width: 13,
+  height: 12,
+  color: Color(0xFF85A2FF),
+);
+
+final femaleIcon = SvgPicture.asset(
+  'assets/icons/female.svg',
+  width: 13,
+  height: 12,
+  color: Color(0xFFF782FF),
+);
+
+final controlsIcon = SvgPicture.asset(
+  'assets/icons/controls.svg',
+  color: const Color.fromARGB(160, 0, 0, 0),
+);

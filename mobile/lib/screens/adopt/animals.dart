@@ -18,12 +18,25 @@ class Animals extends StatelessWidget {
             style: TitleAnimaisStyle,
           ),
         ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: <Widget>[
-            AnimalCard(),
-            AnimalCard(),
-          ],
+        Padding(
+          padding: const EdgeInsets.only(bottom: 36),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: <Widget>[
+              AnimalCard('Rick', 'https://i.ibb.co/hY7HtmQ/rick.jpg', true),
+              AnimalCard('Rick', 'https://i.ibb.co/hY7HtmQ/rick.jpg', false),
+            ],
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(bottom: 36),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: <Widget>[
+              AnimalCard('Rick', 'https://i.ibb.co/hY7HtmQ/rick.jpg', true),
+              AnimalCard('Rick', 'https://i.ibb.co/hY7HtmQ/rick.jpg', true),
+            ],
+          ),
         ),
       ],
     );
