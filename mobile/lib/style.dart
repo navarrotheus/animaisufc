@@ -10,18 +10,21 @@ const String FontNameTitle = 'Mitr';
 const String FontNameDescription = 'Inconsolata';
 
 // Textos
+
+// Adopt
+// Bottom Bar
 const BottomBarTextStyle = TextStyle(
   fontFamily: FontNameTitle,
   fontWeight: FontWeight.w300,
   fontSize: SmallTextSize,
 );
 
+// Categories
 const TitleCategoriesStyle = TextStyle(
   fontFamily: FontNameTitle,
   fontWeight: FontWeight.w500,
   fontSize: MediumTextSize,
 );
-
 const TitleCategoriesCardStyle = TextStyle(
   fontFamily: FontNameTitle,
   fontWeight: FontWeight.w400,
@@ -32,6 +35,14 @@ const BodyCategoriesCardStyle = TextStyle(
   fontWeight: FontWeight.w400,
   fontSize: 10.0,
 );
+
+// Animals
+const TitleAnimaisStyle = TextStyle(
+  fontFamily: FontNameTitle,
+  fontWeight: FontWeight.w500,
+  fontSize: MediumTextSize,
+);
+
 // Cores
 const AppBackgroundColor = Color(0xFFF9F9F9);
 const ButtonColor = Color(0xFF1EA296);
