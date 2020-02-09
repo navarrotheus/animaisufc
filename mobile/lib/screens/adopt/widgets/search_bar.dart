@@ -1,6 +1,6 @@
+import 'package:animaisufc/shared/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import '../../style.dart';
 
 class SearchBar extends StatefulWidget {
   @override
@@ -39,7 +39,7 @@ class _SearchBarState extends State<SearchBar> {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(left: 22),
+          padding: const EdgeInsets.only(left: 10),
           child: controlsIcon,
         ),
       ],

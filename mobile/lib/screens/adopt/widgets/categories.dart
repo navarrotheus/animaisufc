@@ -1,7 +1,7 @@
+import 'package:animaisufc/shared/constants.dart';
 import 'package:flutter/material.dart';
 
-import 'package:animaisufc/style.dart';
-import 'package:animaisufc/screens/adopt/categories_card.dart';
+import 'categories_card.dart';
 
 class Categories extends StatelessWidget {
   const Categories({Key key}) : super(key: key);

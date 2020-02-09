@@ -1,16 +1,15 @@
-import 'package:animaisufc/style.dart';
+import 'package:animaisufc/shared/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class AnimalCard extends StatelessWidget {
   final String _name;
   final String _url;
-  final bool _male;
+  final String _sex;
 
   AnimalCard(
     this._name,
     this._url,
-    this._male,
+    this._sex,
   );
 
   @override
@@ -62,7 +61,7 @@ class AnimalCard extends StatelessWidget {
                     style: TitleAnimalCardStyle,
                   ),
                 ),
-                _male ? maleIcon : femaleIcon
+                _sex == 'm' ? maleIcon : femaleIcon
               ],
             ),
           ),

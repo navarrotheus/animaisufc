@@ -1,4 +1,4 @@
-import 'package:animaisufc/style.dart';
+import 'package:animaisufc/shared/constants.dart';
 import 'package:flutter/material.dart';
 
 import 'animals_card.dart';
@@ -23,8 +23,8 @@ class Animals extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
-              AnimalCard('Rick', 'https://i.ibb.co/hY7HtmQ/rick.jpg', true),
-              AnimalCard('Rick', 'https://i.ibb.co/hY7HtmQ/rick.jpg', false),
+              AnimalCard('Rick', 'https://i.ibb.co/hY7HtmQ/rick.jpg', 'm'),
+              AnimalCard('Rick', 'https://i.ibb.co/hY7HtmQ/rick.jpg', 'f'),
             ],
           ),
         ),
@@ -33,8 +33,8 @@ class Animals extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
-              AnimalCard('Rick', 'https://i.ibb.co/hY7HtmQ/rick.jpg', true),
-              AnimalCard('Rick', 'https://i.ibb.co/hY7HtmQ/rick.jpg', true),
+              AnimalCard('Rick', 'https://i.ibb.co/hY7HtmQ/rick.jpg', 'm'),
+              AnimalCard('Rick', 'https://i.ibb.co/hY7HtmQ/rick.jpg', 'm'),
             ],
           ),
         ),
