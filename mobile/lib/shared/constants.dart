@@ -67,10 +67,24 @@ final maleIcon = SvgPicture.asset(
   color: Color(0xFF85A2FF),
 );
 
+final largeMaleIcon = SvgPicture.asset(
+  'assets/icons/male.svg',
+  width: 30,
+  height: 30,
+  color: Color(0xFF85A2FF),
+);
+
 final femaleIcon = SvgPicture.asset(
   'assets/icons/female.svg',
   width: 13,
   height: 12,
+  color: Color(0xFFF782FF),
+);
+
+final largeFemaleIcon = SvgPicture.asset(
+  'assets/icons/female.svg',
+  width: 30,
+  height: 30,
   color: Color(0xFFF782FF),
 );
 

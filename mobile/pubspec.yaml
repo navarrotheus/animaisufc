@@ -77,6 +77,19 @@ flutter:
         - asset: assets/fonts/Mitr-SemiBold.ttf
           weight: 600
 
+    - family: OpenSans
+      fonts:
+        - asset: assets/fonts/OpenSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/OpenSans-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/OpenSans-Light.ttf
+          weight: 300
+        - asset: assets/fonts/OpenSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/OpenSans-SemiBold.ttf
+          weight: 600
+
     - family: Inconsolata
       fonts:
         - asset: assets/fonts/Inconsolata-Bold.ttf
