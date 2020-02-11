@@ -1,5 +1,6 @@
-class DogModel {
+class AnimalModel {
   int id;
+  String type;
   int fileId;
   String fileName;
   String filePath;
@@ -8,8 +9,9 @@ class DogModel {
   String description;
   String sex;
 
-  DogModel(
+  AnimalModel(
       {this.id,
+      this.type,
       this.fileId,
       this.fileName,
       this.filePath,
@@ -18,8 +20,9 @@ class DogModel {
       this.description,
       this.sex});
 
-  DogModel.fromJson(Map<String, dynamic> json) {
+  AnimalModel.fromJson(Map<String, dynamic> json) {
     id = json['id'];
+    type = json['type'];
     fileId = json['file_id'];
     fileName = json['file_name'];
     filePath = json['file_path'];
@@ -32,6 +35,7 @@ class DogModel {
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
     data['id'] = this.id;
+    data['type'] = this.type;
     data['file_id'] = this.fileId;
     data['file_name'] = this.fileName;
     data['file_path'] = this.filePath;

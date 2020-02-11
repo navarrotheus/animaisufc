@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 // API URL
-const String apiUrl = 'https://animais-ufc.herokuapp.com/dogs';
+const String apiUrl = 'https://animais-ufc.herokuapp.com/animals';
 
 // Texts
 
