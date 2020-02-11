@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+// API URL
+const String apiUrl = 'https://animais-ufc.herokuapp.com/animals';
+
+// Texts
+
 const double LargeTextSize = 26.0;
 const double MediumTextSize = 20.0;
 const double BodyTextSize = 16.0;
@@ -9,14 +14,12 @@ const double SmallTextSize = 12.0;
 const String FontNameTitle = 'Mitr';
 const String FontNameDescription = 'Inconsolata';
 
-// Textos
-
 // Adopt
 // Bottom Bar
 const BottomBarTextStyle = TextStyle(
-  fontFamily: FontNameTitle,
+  fontFamily: 'Mitr',
   fontWeight: FontWeight.w300,
-  fontSize: SmallTextSize,
+  fontSize: 12.0,
 );
 
 // Categories
@@ -73,5 +76,7 @@ final femaleIcon = SvgPicture.asset(
 
 final controlsIcon = SvgPicture.asset(
   'assets/icons/controls.svg',
+  width: 16.0,
+  height: 16.0,
   color: const Color.fromARGB(160, 0, 0, 0),
 );

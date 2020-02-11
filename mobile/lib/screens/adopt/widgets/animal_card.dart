@@ -1,17 +1,13 @@
-import 'package:animaisufc/style.dart';
+import 'package:animaisufc/shared/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class AnimalCard extends StatelessWidget {
-  final String _name;
-  final String _url;
-  final bool _male;
+  final int index;
+  final String name;
+  final String url;
+  final String sex;
 
-  AnimalCard(
-    this._name,
-    this._url,
-    this._male,
-  );
+  AnimalCard(this.index, this.name, this.url, this.sex);
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +25,7 @@ class AnimalCard extends StatelessWidget {
                   topLeft: Radius.circular(19), topRight: Radius.circular(19)),
               color: Colors.white,
               image: DecorationImage(
-                image: NetworkImage(_url),
+                image: NetworkImage(url),
                 fit: BoxFit.cover,
               ),
             ),
@@ -58,11 +54,11 @@ class AnimalCard extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(right: 4),
                   child: Text(
-                    _name,
+                    name,
                     style: TitleAnimalCardStyle,
                   ),
                 ),
-                _male ? maleIcon : femaleIcon
+                sex == 'm' ? maleIcon : femaleIcon
               ],
             ),
           ),
