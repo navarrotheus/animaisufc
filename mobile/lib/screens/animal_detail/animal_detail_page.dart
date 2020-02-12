@@ -19,10 +19,16 @@ class AnimalDetailPage extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Stack(
-          alignment: AlignmentDirectional.bottomCenter,
           children: <Widget>[
             AnimalInfoBackground(_animal.fileUrl),
-            AnimalInfo(_animal.name, _animal.sex, _animal.description),
+            AnimalInfo(
+              _animal.name,
+              _animal.sex,
+              _animal.description,
+              _animal.age,
+              _animal.color,
+            ),
+            BackArrow(),
           ],
         ),
       ),

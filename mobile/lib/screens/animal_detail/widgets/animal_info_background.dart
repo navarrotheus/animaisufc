@@ -7,14 +7,17 @@ class AnimalInfoBackground extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      constraints: BoxConstraints.expand(
-        height: double.infinity,
-        width: double.infinity,
-      ),
-      child: Image.network(
-        url,
-        fit: BoxFit.cover,
+    return Positioned(
+      bottom: MediaQuery.of(context).size.height * 0.4,
+      child: Container(
+        constraints: BoxConstraints.expand(
+          height: MediaQuery.of(context).size.height * 0.6,
+          width: MediaQuery.of(context).size.width,
+        ),
+        child: Image.network(
+          url,
+          fit: BoxFit.cover,
+        ),
       ),
     );
   }
