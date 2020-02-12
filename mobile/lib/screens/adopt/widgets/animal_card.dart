@@ -17,8 +17,8 @@ class AnimalCard extends StatelessWidget {
           margin: const EdgeInsets.all(0),
           child: Container(
             constraints: BoxConstraints.expand(
-              width: 156,
-              height: 120,
+              width: MediaQuery.of(context).size.width * 0.3792,
+              height: MediaQuery.of(context).size.height * 0.1382,
             ),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.only(
@@ -45,8 +45,8 @@ class AnimalCard extends StatelessWidget {
           ),
           child: Container(
             constraints: BoxConstraints.expand(
-              width: 156,
-              height: 34,
+              width: MediaQuery.of(context).size.width * 0.3792,
+              height: MediaQuery.of(context).size.height * 0.0391,
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
