@@ -13,10 +13,18 @@ abstract class _AnimalStoreBase with Store {
   @observable
   List<AnimalModel> animals = [];
 
+  @observable
+  List<AnimalModel> cats = [];
+
+  @observable
+  List<AnimalModel> dogs = [];
+
   @action
   fetchAnimalsList() {
     getAllAnimals().then((animalsList) {
       animals = animalsList;
+      cats = animals.where((animal) => animal.type == 'g');
+      dogs = animals.where((animal) => animal.type == 'c');
     });
   }
 

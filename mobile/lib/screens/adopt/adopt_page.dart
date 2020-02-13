@@ -12,7 +12,7 @@ class AdoptPage extends StatefulWidget {
 }
 
 class _AdoptPageState extends State<AdoptPage> {
-  int _index = 0;
+  int _index = 1;
 
   @override
   Widget build(BuildContext context) {

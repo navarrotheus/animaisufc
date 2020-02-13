@@ -8,9 +8,8 @@ import 'package:provider/provider.dart';
 
 class AnimalDetailPage extends StatelessWidget {
   final int index;
-  final String name;
 
-  const AnimalDetailPage({Key key, this.index, this.name}) : super(key: key);
+  const AnimalDetailPage({Key key, this.index}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

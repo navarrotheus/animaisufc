@@ -6,12 +6,14 @@ import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:provider/provider.dart';
 
 import 'animal_card.dart';
+import 'categories_controller.dart';
 
 class Animals extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final _animalStore = Provider.of<AnimalStore>(context);
     _animalStore.fetchAnimalsList();
+
     return Expanded(
       child: Container(
         child: Observer(
